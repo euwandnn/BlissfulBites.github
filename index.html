@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blissful Bites</title>
+    <link rel="icon" href="bblogo.png" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8E4E2;
+            font-family: 'cursive;';
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-image: url("https://i.pinimg.com/564x/6a/28/cc/6a28ccd4aa0ab9a9be980dc245f169f3.jpg");
+            color: #fff;
+            padding: 0.8em 0;
+            text-align: center;
+            transition: background-image 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        nav {
+            background-color: #EB78B8;
+            overflow: hidden;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        nav a {
+            display: inline-table;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-family: 'cursive';
+        }
+
+        nav a:hover {
+            background-color: #D665A9;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #EB78B8;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            transition: background-color 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery:hover img {
+            opacity: 0.8;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #EB78B8;
+        }
+
+        .circle-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .circle-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .circle-image:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .circle-image img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .circle-text {
+            margin-top: 10px;
+            font-size: 19px;
+            color: #EB78B8;
+            font-family: 'cursive;';
+            transition: color 0.3s ease;
+        }
+
+        .circle-image:hover .circle-text {
+            color: #EB78B8;
+        }
+
+        .featured-menu-divider {
+            border-top: 2px solid #EB78B8;
+            margin: 20px 0;
+        }
+
+        .featured-menu-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #EB78B8;
+            font-family: 'cursive';
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-family: 'copperplate gothic'; font-size: 50px; margin: 0;"><b>BLISSFUL BITES</b></h1>
+        <p style="font-family: 'copperplate gothic'; font-size: 20px; margin: 5px 0;"><b>Welcome to the best doughnut dreamland!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</b></a>
+    </nav>
+
+    <div class="circle-images">
+        <div class="circle-image">
+            <img src="https://i.pinimg.com/736x/1f/d6/c4/1fd6c41020c5e7eb9eff21a9386a8260.jpg" alt="Order and Pick Up">
+        </div>
+        <div class="circle-image">
+            <img src="https://i.pinimg.com/736x/8f/a6/f5/8fa6f55947a70141b97edc8073d2300a.jpg" alt="Download the App">
+        </div>
+        <div class="circle-image">
+            <img src="https://i.pinimg.com/736x/60/fa/7c/60fa7cbec35fcd907e2bf0a4de9b9b23.jpg" alt="Landline Number">
+        </div>
+    </div>
+
+    <div class="circle-images">
+        <div class="circle-text">Order and Pick Up</div>
+        <div class="circle-text">Download the App</div>
+        <div class="circle-text">Landline Number</div>
+    </div>
+
+    <div class="featured-menu-divider"></div>
+
+    <div class="featured-menu-text">Featured Menu</div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="cookiesncreambb.html">
+                <img src="https://i.pinimg.com/564x/68/16/74/681674b44959b2eaa98ebd93915db616.jpg" alt="Cookies n Creme">
+            </a>
+            <div class="desc">Cookies n Creme <br> ₱34.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="milkymarvel.html">
+                <img src="https://i.pinimg.com/564x/66/fc/cf/66fccf9b4107e0daf36a2d7479b363ff.jpg" alt="Milky Marvel">
+            </a>
+            <div class="desc">Milky Marvel <br> ₱34.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="mochamadness.html">
+                <img src="https://i.pinimg.com/564x/6a/5a/08/6a5a084d6d199ffd390da77ca9cccab2.jpg" alt="Mocha Madness">
+            </a>
+            <div class="desc">Mocha Madness <br> ₱29.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="crimsoncherry.html">
+                <img src="https://i.pinimg.com/564x/ca/58/81/ca5881c4f78b650a04ac5eb630054c47.jpg" alt="Crimson Cherry">
+            </a>
+            <div class="desc">Crimson Cherry <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="darkdelight.html">
+                <img src="https://i.pinimg.com/564x/fd/39/dd/fd39dd03c31b187890ad005aca94be5f.jpg" alt="Dark Delight">
+            </a>
+            <div class="desc">Dark Delight <br> ₱39.00 </div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="strawberrysunrise.html">
+                <img src="https://i.pinimg.com/736x/7b/03/aa/7b03aa468fcb13ed5183e7ce9fc64589.jpg" alt="Dark Delight">
+            </a>
+            <div class="desc">Strawberry Sunrise <br> ₱39.00 </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="featured-menu-divider"></div>
+
+    <div class="featured-menu-text">Drinks</div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="coffee.html">
+                <img src="https://i.pinimg.com/564x/09/0c/3b/090c3b5cbab89f021ee8743459f07587.jpg" alt="Coffee">
+            </a>
+            <div class="desc"> Coffee </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="nonalcohol.html">
+                <img src="https://i.pinimg.com/564x/ca/66/79/ca6679e5b332fb5afdf97e9a56d6913f.jpg" alt="Non-Alcoholic Beverages">
+            </a>
+            <div class="desc"> Non-Alcoholic Beverages </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="milkshake.html">
+                <img src="https://i.pinimg.com/564x/a7/29/1a/a7291aad5d8348c03bacfb25d06a1496.jpg" alt="Milkshake">
+            </a>
+            <div class="desc">Milkshake</div>
+        </div>
+      </div>
+
+    <footer>
+        <p>&copy; 2024 Blissful Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - Milkshake</title>
+    <link rel="icon" href="bblogo.png" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8E4E2;
+            font-family: 'cursive;';
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-image: url("https://i.pinimg.com/564x/6a/28/cc/6a28ccd4aa0ab9a9be980dc245f169f3.jpg");
+            color: #fff;
+            padding: 0.8em 0;
+            text-align: center;
+            transition: background-image 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        nav {
+            background-color: #EB78B8;
+            overflow: hidden;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        nav a {
+            display: inline-table;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-family: 'cursive';
+        }
+
+        nav a:hover {
+            background-color: #D665A9;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #EB78B8;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            transition: background-color 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery:hover img {
+            opacity: 0.8;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #EB78B8;
+        }
+
+        .featured-menu-divider {
+            border-top: 2px solid #EB78B8;
+            margin: 20px 0;
+        }
+
+        .featured-menu-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #EB78B8;
+            font-family: 'cursive';
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-family: 'copperplate gothic'; font-size: 50px; margin: 0;"><b>BLISSFUL BITES</b></h1>
+        <p style="font-family: 'copperplate gothic'; font-size: 20px; margin: 5px 0;"><b>Welcome to the best doughnut dreamland!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</b></a>
+    </nav><br><br><br>
+
+    <div class="featured-menu-text"> Menu</div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="sakura.html">
+                <img src="https://i.pinimg.com/564x/1a/41/4a/1a414a909a4b1a5d3d49b5cbece8ace0.jpg" alt="Sakura Serenity Shake">
+            </a>
+            <div class="desc">Sakura Serenity Shake <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="noircocoa.html">
+                <img src="https://i.pinimg.com/564x/09/e8/da/09e8dabbce7787765e88e400494e7e62.jpg" alt="Noir Elixir Shake">
+            </a>
+            <div class="desc">Noir Elixir Shake <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="strawberrysymphony.html">
+                <img src="https://i.pinimg.com/564x/2e/b9/8d/2eb98d5fef6a3bc5dbae5668c73ea06e.jpg" alt="Strawberry Symphony Shake">
+            </a>
+            <div class="desc">Strawberry Symphony Shake <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="cookiesndream.html">
+                <img src="https://i.pinimg.com/564x/72/6c/ea/726cea6d5a7f429383f11b9f43f6980d.jpg" alt="Cookies 'n Dream Shake">
+            </a>
+            <div class="desc">Cookies 'n Dream Shake <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="peach.html">
+                <img src="https://i.pinimg.com/564x/02/09/44/020944941029ab0507548cfc431372d4.jpg" alt="Peachy Pastel Paradise Shake">
+            </a>
+            <div class="desc">Peachy Pastel Paradise Shake <br> ₱39.00 </div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="matcha.html">
+                <img src="https://i.pinimg.com/564x/9d/34/0a/9d340a256b3ddec75a7bb04d0e68c610.jpg" alt="Green Tea Elixir Delight">
+            </a>
+            <div class="desc">Green Tea Elixir Delight <br> ₱39.00 </div>
+        </div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Blissful Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

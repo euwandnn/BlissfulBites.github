@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - Non-Alcoholic Beverages</title>
+    <link rel="icon" href="bblogo.png" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8E4E2;
+            font-family: 'cursive;';
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-image: url("https://i.pinimg.com/564x/6a/28/cc/6a28ccd4aa0ab9a9be980dc245f169f3.jpg");
+            color: #fff;
+            padding: 0.8em 0;
+            text-align: center;
+            transition: background-image 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        nav {
+            background-color: #EB78B8;
+            overflow: hidden;
+            text-align: center;
+            transition: background-color 0.5s ease;
+        }
+
+        nav a {
+            display: inline-table;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            font-family: 'cursive';
+        }
+
+        nav a:hover {
+            background-color: #D665A9;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #EB78B8;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            transition: background-color 0.5s ease;
+            font-family: 'cursive';
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery:hover img {
+            opacity: 0.8;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #EB78B8;
+        }
+
+        .featured-menu-divider {
+            border-top: 2px solid #EB78B8;
+            margin: 20px 0;
+        }
+
+        .featured-menu-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #EB78B8;
+            font-family: 'cursive';
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-family: 'copperplate gothic'; font-size: 50px; margin: 0;"><b>BLISSFUL BITES</b></h1>
+        <p style="font-family: 'copperplate gothic'; font-size: 20px; margin: 5px 0;"><b>Welcome to the best doughnut dreamland!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</b></a>
+    </nav><br><br><br>
+
+    <div class="featured-menu-text"> Menu</div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank" href="lemonlilac.html">
+                <img src="https://i.pinimg.com/564x/12/6a/89/126a8984067e2b1e0f40546ffd3a0b43.jpg" alt="Lemon Lilac Refresher">
+            </a>
+            <div class="desc">Lemon Lilac Refresher <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="azureberry.html">
+                <img src="https://i.pinimg.com/564x/7a/6b/8e/7a6b8eac88c087b50eebc57b190160a7.jpg" alt="Azure Berry Splash">
+            </a>
+            <div class="desc">Azure Berry Splash <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="strawberrysunset.html">
+                <img src="https://i.pinimg.com/564x/f5/d6/9e/f5d69eb7f0bdeb9bd5236b5bd327ab43.jpg" alt="Strawberry Sunset Sip">
+            </a>
+            <div class="desc">Strawberry Sunset Sip <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="pomelo.html">
+                <img src="https://i.pinimg.com/736x/a9/9d/5d/a99d5d790fdcf622e1bb9484f686b732.jpg" alt="Pomelo Paradise Punch">
+            </a>
+            <div class="desc">Pomelo Paradise Punch <br> ₱39.00 </div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="raspberry.html">
+                <img src="https://i.pinimg.com/564x/5d/f8/92/5df892621ed907c87ff7c626ce691e46.jpg" alt="Raspberry Rhapsody">
+            </a>
+            <div class="desc">Raspberry Rhapsody <br> ₱39.00 </div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank" href="kiwi.html">
+                <img src="https://i.pinimg.com/564x/29/91/0a/29910a7fb3883ab8b6e0f82a8eb0446c.jpg" alt="Tropical Kiwi Isle">
+            </a>
+            <div class="desc">Tropical Kiwi Isle <br> ₱39.00 </div>
+        </div>
+    </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <footer>
+        <p>&copy; 2024 Blissful Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

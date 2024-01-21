@@ -1,0 +1,179 @@
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Delight</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #F8E4E2;
+        }
+
+        header {
+            background-image: url("https://i.pinimg.com/564x/6a/28/cc/6a28ccd4aa0ab9a9be980dc245f169f3.jpg");
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #EB78B8;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            float: center;
+            display: inline-table;
+            color: white;
+            text-align: center;
+            padding: 30px ;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #EB78B8;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        div.gallery {
+            margin: 60px;
+            border: 1px solid #ccc; 
+            float: left;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 65%;
+            border-radius: 8px
+        }
+
+        div.desc {
+            padding: 25px;
+            text-align: center;
+            color: #EB78B8;
+        }
+
+        section {
+            margin:40px;
+            display: block;
+            justify-content: left;
+        }
+        form {
+            background-color: #f5b8da;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        select {
+            appearance: none;
+            -moz-appearance: none; 
+            -webkit-appearance: none;
+        }
+
+        label {
+            display: flex;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #d79aed;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-family: copperplate gothic; font-size: 80px"><b>BLISSFUL BITES</h1>
+        <p style="font-family: copperplate gothic; font-size: 30px"><b>Welcome to the best doughnut dreamland!</b></p>
+    </header>
+
+    <nav>
+        <a href="index.html"><b>Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contactus.html">Contact Us</b></a>
+    </nav>
+
+    <div class="gallery">
+  <a target="_blank" href="blissful bites.html">
+    <img src="https://i.pinimg.com/736x/7b/03/aa/7b03aa468fcb13ed5183e7ce9fc64589.jpg" alt="Strawberry Sunrise" width="600" height="400">
+  </a>
+  <div class="desc">Strawberry Sunrise</div>
+</div>
+
+<section>
+        <form action="THANKS.html" method="post">
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="creditCard">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cash">Gcash</option>
+                    <option value="cash">Cash on Delivery</option>
+                </select><br><br><br>
+
+                <button type="submit">Order Now</button>
+            </div>
+        </form>
+    </section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <footer>
+        <p>&copy; 2024 Blissful Bites. All rights reserved.</p>
+    </footer>
+
+</body>

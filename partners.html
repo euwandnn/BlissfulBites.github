@@ -25,6 +25,58 @@
             font-family: 'cursive';
         }
 
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+            color: #EB78B8;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery:hover img {
+            opacity: 0.8;
+        }
+
+        .featured-menu-divider {
+            border-top: 2px solid #EB78B8;
+            margin: 20px 0;
+        }
+
+        .featured-menu-text {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #EB78B8;
+            font-family: 'cursive';
+        }
+
         nav {
             background-color: #EB78B8;
             overflow: hidden;
@@ -138,7 +190,55 @@
 
             <button type="submit">Submit</button>
         </form>
-    </section>
+    </section><br><br><br><br>
+
+    <div class="featured-menu-divider"></div>
+
+    <div class="featured-menu-text">Trusted Partners</div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <a target="_blank">
+                <img src="https://i.pinimg.com/564x/fc/c0/f2/fcc0f2fd666f8e68b0cf827b57fa18c1.jpg" alt="Grab Food">
+            </a>
+            <div class="desc">Grab - Taxi & Food Delivery</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+                <img src="https://logodownload.org/wp-content/uploads/2020/02/foodpanda-logo-0.png" alt="foodpanda">
+            </a>
+            <div class="desc">foodpanda</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank"><br><br><br><br><br><br>
+                <img src="https://static.wixstatic.com/media/15eab0_5ff881541b6a4945b0911429ca39d840~mv2.png/v1/fill/w_1250,h_800,al_c/15eab0_5ff881541b6a4945b0911429ca39d840~mv2.png" alt="Curve Coffee Collaborators">
+            </a><br><br><br>
+            <div class="desc">Curve Coffee Collaborators</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+                <img src="https://pbs.twimg.com/profile_images/1553504336960901125/CZ-uvL_x_400x400.jpg" alt="Escolta Coffee Company">
+            </a>
+            <div class="desc">Escolta Coffee Company</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank"><br><br><br><br><br><br><br><br>
+                <img src="https://allaboutbaking.ph/cdn/shop/files/AAB_logo.png?v=1673663682" alt="All About Baking">
+            </a><br><br><br><br><br><br><br><br><br><br>
+            <div class="desc">All About Baking</div>
+        </div>
+    
+        <div class="gallery">
+            <a target="_blank"><br><br><br><br><br><br><br><br>
+                <img src="https://www.thebakingwarehouse.com/image/data/logo.png" alt="The Baking Warehouse">
+            </a><br><br><br><br><br><br><br>
+            <div class="desc">The Baking Warehouse</div>
+        </div>
+    </div><br><br><br><br>
 
     <footer>
         <p>&copy; 2024 Blissful Bites. All rights reserved.</p>
